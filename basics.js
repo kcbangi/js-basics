@@ -7,10 +7,21 @@ var myName = 'Keith';
  * as well as an `age` (number);
  */
 
+ var person = {
+     name: myName,
+     age: 16
+ }
+
 /* Create a variable called `canDrive`,
  * if it should be true if your person object is at least 16 years old
  */
+var canDrive = null;
 
+ if(person.age >= 16) {
+     canDrive = true
+ } else {
+     canDrive = false
+ }
 /* Create a function called `greet`,
  * it should take a 1 parameter, `name`
  * and it should print "Hello, my name is {name}"
